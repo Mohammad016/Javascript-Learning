@@ -14,19 +14,14 @@ The **APIs available**
 ```text
 Browser JS gives you:
 
-  DOM APIs (document, querySelector, etc.)
-
-fetch, localStorage, sessionStorage
+  DOM APIs (document, querySelector, etc.) fetch, localStorage, sessionStorage
 
 
 Node.js gives you:
 
   File system (fs)
-
   HTTP server (http)
-
   Path utilities (path)
-
   Buffer, streams, crypto, etc.
 
 ```
