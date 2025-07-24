@@ -14,7 +14,10 @@ The **APIs available**
 ```text
 Browser JS gives you:
 
-  DOM APIs (document, querySelector, etc.) fetch, localStorage, sessionStorage
+  DOM APIs (document, querySelector, etc.)
+  fetch, 
+  localStorage, 
+  sessionStorage
 
 
 Node.js gives you:
