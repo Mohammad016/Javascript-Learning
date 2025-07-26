@@ -19,5 +19,27 @@ buttons.forEach(function(button) {
 ## Project-2
 
 ```Javascript
+//Check html file structure and then decide which document to understand first
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const height = parseInt(document.getElementById('height').value);
+  //usage of two different fetching of values from DOM
+  const weight = parseInt(document.querySelector('#weight').value);
+
+  const result = document.querySelector('#results');
+
+  if (!height || /^1-9/.test(height) || isNaN(height))
+    result.innerHTML = 'Please enter correct Height value';
+  else if (!weight || /^1-9/.test(weight) || isNaN(weight))
+    result.innerHTML = `Please enter correct Weight value ${weight}`;
+  else
+  {
+    const bmiRes = (weight/((height*height)/10000)).toFixed(2);
+    result.innerHTML = `<span>Your BMI is ${bmiRes}</span>`;
+  }
+
+});
 
 ```
