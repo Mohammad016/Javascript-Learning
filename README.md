@@ -1,6 +1,11 @@
 # Javascript-Learning
 A fresh learning of JavaScript
 
+## Global Execution context and call stack
+2 phase runs in js
+1. Global execution context -> "this" (window object for browser) [ we also have "function execution context and eval execution context"]
+2. Memory creation phase -> memory is allocated and "undefined" is assigned for variables and for functions its definition is assigned
+3. Execution phase -> values are assigned to variables and for functions "new variable environment and execution thread" are created and again memory creation phase and execution phase is again started in that function's sandbox.[Later this new variable environment and thread are deleted once executed and everything is returned back to its parent execution context which is ultimately stored(or returned back to ) Global execution context].
 
 ## Difference in syntax between js and node js
 
